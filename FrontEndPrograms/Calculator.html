@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body
+		{
+			background-color: white;
+			margin: 10% 35%;
+		}
+		.cal
+		{
+			height: 250px;
+			width: 200px;
+			background: white;
+		}
+		input{
+			border: none;
+			width: 50px;
+			height: 50px;
+			color: white;
+			background-color: black;
+			margin-left: -4px;
+		}
+		.op
+		{
+			width: 146px;
+			background-color: lightgray;
+			color: black;
+		}
+		.ac{
+			background-color:darkcyan ;
+			height: 53px;
+			}
+		.operator{
+			background-color: grey;
+		}
+		#ac{
+			padding-bottom: -20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="cal">
+		<form>
+			
+			<div>
+			<input type="text" name="op" class="op" >
+			<input type="button" value="AC" onclick="op.value+=''" class="ac" id="ac">
+		</div>
+		<div>
+			<input type="button" value="9" onclick="op.value+='9' " class="num">
+			<input type="button" value="8" onclick="op.value+='8' " class="num">
+			<input type="button" value="7" onclick="op.value+='7' " class="num">
+			<input type="button" value="+" onclick="op.value+='+' " class="operator">
+		</div>
+		<div>
+			<input type="button" value="4" onclick="op.value+='4' " class="num">
+			<input type="button" value="5" onclick="op.value+='5' " class="num">
+			<input type="button" value="5" onclick="op.value+='6' " class="num">
+			<input type="button" value="-" onclick="op.value+='-' " class="operator">
+		</div>
+		<div>
+			<input type="button" value="1" onclick="op.value+='1' " class="num">
+			<input type="button" value="2" onclick="op.value+='2' " class="num">
+			<input type="button" value="3" onclick="op.value+='3' " class="num">
+			<input type="button" value="/" onclick="op.value+='/' " class="operator">
+		</div>
+		<div>
+			<input type="button" value="." onclick="op.value+='.' " class="num">
+			<input type="button" value="0" onclick="op.value+='0' " class="num">
+			<input type="button" value="=" onclick="op.value=eval(op.value) " class="num">
+			<input type="button" value="x" onclick="op.value+='x' " class="operator">
+		</div>
+
+		</form>
+	</div>
+
+</body>
+</html>
